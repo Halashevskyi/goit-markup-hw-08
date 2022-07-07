@@ -1228,18 +1228,6 @@ img {
   background-color: var(--title-color);
   border: 1px solid var(--title-color);
   border-radius: 3px;
-  padding: 40px;
-}
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
 }
 
 .modal-button {
@@ -1283,6 +1271,7 @@ img {
   letter-spacing: 3%;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+  margin-top: 0;
 }
 
 .modal-form {

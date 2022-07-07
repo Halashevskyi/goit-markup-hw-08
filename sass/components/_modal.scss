@@ -22,16 +22,16 @@
     background-color: var(--title-color);
     border: 1px solid var(--title-color);
     border-radius: 3px;
-    padding: 40px;
+    // padding-top: 40px;
 
-    @media screen and (min-width:480px) {
-            width: 450px;
-        }
+    // @media screen and (min-width:480px) {
+    //         width: 450px;
+    //     }
     
-        @media screen and (min-width:1200px) {
-            width: 528px;
-            height: 581px;
-        }
+    //     @media screen and (min-width:1200px) {
+    //         width: 528px;
+    //         height: 581px;
+    //     }
 
 }
 
@@ -71,6 +71,7 @@
     letter-spacing: 3%;
     color: var(--primary-text-color);
     margin-bottom: 12px;
+    margin-top: 0;
 }
 
 .modal-form {
