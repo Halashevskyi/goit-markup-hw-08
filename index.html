@@ -17,7 +17,7 @@
 <body> 
   <!-- header шапка сайта -->
     <header class="header">
-        <div class="container nav">
+        <div class="header__container ">
      <nav class="nav">
      <a href="./index.html" class="nav__logo link">
          <span class="nav__accent link">Web</span>Studio</a>
@@ -33,16 +33,68 @@
     <ul class="adress header__adress list ">
         <li class="adress__item item icon-mail">
             <a href="mailto:info@devstudio.com" class="adress__mail link">
-                <svg class="adress__symbol" width="16" height="12">
+                <svg class="adress__symbol adress__symbol--size" width="16" height="12">
                 <use href="./img/svg-image/symbol-defs.svg#icon-mail"></use>
             </svg>info@devstudio.com</a></li>
         <li class="adress__item icon-tel">
             <a href="tel:+380961111111" class="adress__tel link">
-                <svg class="adress__symbol" width="10" height="16">
+                <svg class="adress__symbol  adress__symbol--size" width="10" height="16">
                 <use href="./img/svg-image/symbol-defs.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
     </ul>
     </div>
+<div class="page-header__mobile-container">
+    <a lang="en" href="./index.html" class="mobile-nav__logo"><span class="mobile-nav__logo-accent">Web</span>Studio</a>
+    <button type="button" class="menu-button" data-menu-open>
+        <svg width="40" height="40">
+            <use href="./img/svg-image/symbol-defs.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="page-header__overlay" data-menu>
+        <nav class="mobile-nav">
+            <button type="button" class="mobile-nav__close" data-menu-close>
+                <svg width="40" height="40">
+                    <use href="./img/svg-image/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-nav__list list">
+                <li class="mobile-nav__item"><a href="./index.html"
+                        class="mobile-nav__link mobile-nav__link--current">Студия</a>
+                </li>
+                <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link">Портфолио</a></li>
+                <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a lang="en" href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com </a>
+            </li>
+        </ul>
+        <ul class="mobile-social list">
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://twitter.com/" target="_blank"
+                    rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://facebook.com/" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
         </header>
         <main>
 
@@ -128,7 +180,8 @@
     <h2 class="team__title">Наша команда</h2>
     <ul class="person list">
         <li class="person__item">
-            <img src="./img/people/img.jpg" alt="img" width="270" height="260" class="team-img">
+            <img src="./img/team/igor-mobile.jpg" alt="Фото Игорь Демьяненко" class="team-img"
+                srcset="./img/team/igor-mobile.jpg 1x, ./img/team/igor-mobile@2x.jpg 2x">
             <div class="person__container">
             <h3 class="person__name">Игорь Демьяненко</h3>
             <p class="person__text">Product Designer</p>
@@ -162,7 +215,8 @@
             </div>
         </li>
         <li class="person__item">
-            <img src="./img/people/img(1).jpg" alt="img1" width="270" height="260" class="team-img" >
+            <img src="./img/team/olga-mobile.jpg" alt="Фото Ольга Репина" class="team-img"
+                srcset="./img/team/olga-mobile.jpg 1x, ./img/team/olga-mobile@2x.jpg 2x">
             <div class="person__container">
             <h3 class="person__name">Ольга Репина</h3>
             <p class="person__text">Frontend Developer</p>
@@ -192,7 +246,8 @@
             </div>
         </li>
         <li class="person__item">
-            <img src="./img/people/img(2).jpg" alt="img2" width="270" height="260" class="team-img">
+            <img src="./img/team/nikolay-mobile.jpg" alt="Фото Николай Тарасов" class="team-img"
+                srcset="./img/team/nikolay-mobile.jpg 1x, ./img/team/nikolay-mobile@2x.jpg 2x">
             <div class="person__container">
             <h3 class="person__name">Николай Тарасов</h3>
             <p class="person__text">Marketing</p>
@@ -222,7 +277,8 @@
             </div>
         </li>
         <li class="person__item">
-            <img src="./img/people/img(3).jpg" alt="img3" width="270" height="260" class="team-img">
+            <img src="./img/team/michael-mobile.jpg" alt="Фото Михаил Ермаков" class="team-img"
+                srcset="./img/team/michael-mobile.jpg 1x, ./img/team/michael-mobile@2x.jpg 2x">
             <div class="person__container">
             <h3 class="person__name">Михаил Ермаков</h3>
             <p class="person__text">UI Designer</p>
@@ -269,7 +325,7 @@
                     <use href="./img/svg-image/symbol-defs.svg#icon-Logo1"></use>
                 </svg>
             </a>
-        </li>
+        </li> 
          <li class="clients-list__box">
             <a class="clients-list__link" href="" target="_blank" rel="noopener noreferrer">
              <svg class="clients-list__symbol"><use href="./img/svg-image/symbol-defs.svg#icon-Logo2"></use></svg></a></li>
@@ -312,8 +368,8 @@
             </ul>
              </address>
             </div>
-        <div>
-            <p class="footer-welcome">присоединяйтесь</p>
+        <div class="footer-social" >
+            <p class="footer-social__title">присоединяйтесь</p>
             <ul class="icons list">
                 <li class="icons__links">
                     <a href="" target="_blank" rel="noopener noreferrer" 
@@ -426,11 +482,14 @@
         </span>
         </label>
         </div>
-    <button type="submit" class="modal-buttons">Отправить</button>   
+        <div class="modal-div">
+<button type="submit" class="modal-buttons">Отправить</button>
+</div>
             </form>
             </div>
         </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

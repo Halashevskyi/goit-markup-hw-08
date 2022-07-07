@@ -6,15 +6,51 @@
 }
 
 .container-footer {
-    margin: 0 auto;
+    // margin: 0 auto;
+    // padding: 0 15px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+margin: 0 auto;
     padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    }
+
 }
 
 .footer-address {
-    margin-right: 70px;
+    @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
+}
+.footer-address__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    text-decoration: none;
 }
 
 .footer-address__logo-accent {
@@ -31,16 +67,10 @@
 }
 
 
-.footer-address__link {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
+.footer-list {
+    font-style: normal;
 }
+
 
 .footer-list__item:not(:last-child) {
     margin-bottom: 9px;
@@ -68,7 +98,13 @@
     color: var(--title-color);
 }
 
-.footer-welcome {
+.footer-social {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-social__title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -80,15 +116,19 @@
 
 .icons {
     display: flex;
+    
+        @media screen and (max-width: 1199px) {
+            justify-content: center;
+        }
 }
 
 
 
 .icons__links {
-    display: flex;
-    margin-right: 10px;
-    &:last-child {
-            margin-right: 0;}
+   
+    // display: flex;
+    &:not(:last-child) {
+            margin-right: 10px;}
 &:hover,
 &:focus {
     background-color: var(--accent-color);
@@ -124,15 +164,55 @@
 
 
 .online-section {
-    margin-left: auto;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        @media screen and (min-width: 1200px) {
+            display: block;
+            margin-left: 93px;
+        }
 }
 
 .online-section__text {
+    margin-top: 0;
+        margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
     color: var(--title-color);
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.online-form__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-style: Rregular;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: left;
+    vertical-align: center;
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    background-color: #2F303A;
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+           @media screen and (min-width:480px) {
+               width: 450px;
+               margin-bottom: 20px;
+           }
+    
+           @media screen and (min-width:1200px) {
+               width: 358px;
+               margin-bottom: 0;
+           }
 }
 
 .online-form__button {
@@ -157,6 +237,10 @@
     &:focus {
             background-color: var(--accent-color);
             color: var(--title-color);}
+    
+ @media screen and (min-width:1200px) {
+     margin-left: 12px; }
+
 }
 
 
@@ -168,23 +252,4 @@
     fill: var(--title-color);
 }
 
-.online-form__input {
-    width: 358px;
-    height: 50px;
-    padding: 15px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    font-style: Rregular;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: center;
-    letter-spacing: 3%;
-    color: rgba(255, 255, 255, 0.6);
-    outline: none;
-    background-color: #2F303A;
-    &:focus {
-            border-color: var(--accent-color);
-        }
-}
 

@@ -1,5 +1,9 @@
 .about {
     padding-top: 0;
+    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
 }
 
 .about__title {
@@ -29,6 +33,9 @@
 }
 
 
+.about-img {
+display: block;
+}
 
 .about-examples__box {
     position: absolute;
