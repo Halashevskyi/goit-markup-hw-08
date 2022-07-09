@@ -180,9 +180,17 @@
     <h2 class="team__title">Наша команда</h2>
     <ul class="person list">
         <li class="person__item">
-            <picture></picture>
-            <img src="./img/team/igor-mobile.jpg" alt="Фото Игорь Демьяненко" class="team-img"
-                srcset="./img/team/igor-mobile.jpg 1x, ./img/team/igor-mobile@2x.jpg 2x">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./img/team/igor-mobile.jpg 1x, 
+                                                            ./img/team/igor-mobile@2x.jpg 2x" type="image/jpeg">
+                    <source media="(max-width: 1199px)" srcset="./img/team/igor-mobile.jpg 1x,
+                                                            ./img/team/igor-mobile@2x.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="./img/team/igor-mobile.jpg 1x,
+                                                            ./img/team/igor-mobile@2x.jpg 2x">
+                    <img src="./img/team/igor-mobile.jpg" alt="Фото Игорь Демьяненко" class="team-img">
+                </picture>
+            <!-- <img src="./img/team/igor-mobile.jpg" alt="Фото Игорь Демьяненко" class="team-img"
+                srcset="./img/team/igor-mobile.jpg 1x, ./img/team/igor-mobile@2x.jpg 2x"> -->
             <div class="person__container">
             <h3 class="person__name">Игорь Демьяненко</h3>
             <p class="person__text">Product Designer</p>
@@ -216,8 +224,17 @@
             </div>
         </li>
         <li class="person__item">
-            <img src="./img/team/olga-mobile.jpg" alt="Фото Ольга Репина" class="team-img"
-                srcset="./img/team/olga-mobile.jpg 1x, ./img/team/olga-mobile@2x.jpg 2x">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./img/team/olga-mobile.jpg 1x, 
+                                                                            ./img/team/olga-mobile@2x.jpg 2x" type="image/jpeg">
+                    <source media="(max-width: 1199px)" srcset="./img/team/olga-mobile.jpg 1x,
+                                                                            ./img/team/olga-mobile@2x.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="./img/team/olga-mobile.jpg 1x,
+                                                                            ./img/team/olga-mobile@2x.jpg 2x">
+                    <img src="./img/team/olga-mobile.jpg" alt="Фото Ольга Репина" class="team-img">
+                </picture>
+            <!-- <img src="./img/team/olga-mobile.jpg" alt="Фото Ольга Репина" class="team-img"
+                srcset="./img/team/olga-mobile.jpg 1x, ./img/team/olga-mobile@2x.jpg 2x"> -->
             <div class="person__container">
             <h3 class="person__name">Ольга Репина</h3>
             <p class="person__text">Frontend Developer</p>
@@ -247,8 +264,18 @@
             </div>
         </li>
         <li class="person__item">
-            <img src="./img/team/nikolay-mobile.jpg" alt="Фото Николай Тарасов" class="team-img"
-                srcset="./img/team/nikolay-mobile.jpg 1x, ./img/team/nikolay-mobile@2x.jpg 2x">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./img/team/nikolay-mobile.jpg 1x, 
+                    ./img/team/nikolay-mobile@2x.jpg 2x"
+                    type="image/jpeg">
+                <source media="(max-width: 1199px)" srcset="./img/team/nikolay-mobile.jpg 1x,
+                       ./img/team/nikolay-mobile@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./img/team/nikolay-mobile.jpg 1x,
+                          ./img/team/nikolay-mobile@2x.jpg 2x">
+                <img src="./img/team/nikolay-mobile.jpg" alt="Фото Николай Тарасов" class="team-img">
+            </picture>
+            <!-- <img src="./img/team/nikolay-mobile.jpg" alt="Фото Николай Тарасов" class="team-img"
+                srcset="./img/team/nikolay-mobile.jpg 1x, ./img/team/nikolay-mobile@2x.jpg 2x"> -->
             <div class="person__container">
             <h3 class="person__name">Николай Тарасов</h3>
             <p class="person__text">Marketing</p>
@@ -278,8 +305,17 @@
             </div>
         </li>
         <li class="person__item">
-            <img src="./img/team/michael-mobile.jpg" alt="Фото Михаил Ермаков" class="team-img"
-                srcset="./img/team/michael-mobile.jpg 1x, ./img/team/michael-mobile@2x.jpg 2x">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./img/team/michael-mobile.jpg 1x, 
+                                    ./img/team/michael-mobile@2x.jpg 2x" type="image/jpeg">
+                    <source media="(max-width: 1199px)" srcset="./img/team/michael-mobile.jpg 1x,
+                                       ./img/team/michael-mobile@2x.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="./img/team/michael-mobile.jpg 1x,
+                                          ./img/team/michael-mobile@2x.jpg 2x">
+                    <img src="./img/team/michael-mobile.jpg" alt="Фото Михаил Ермаков" class="team-img">
+                </picture>
+            <!-- <img src="./img/team/michael-mobile.jpg" alt="Фото Михаил Ермаков" class="team-img"
+                srcset="./img/team/michael-mobile.jpg 1x, ./img/team/michael-mobile@2x.jpg 2x"> -->
             <div class="person__container">
             <h3 class="person__name">Михаил Ермаков</h3>
             <p class="person__text">UI Designer</p>
