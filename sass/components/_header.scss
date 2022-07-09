@@ -130,7 +130,7 @@
     // padding-bottom: 32px;
     // margin-bottom: 0;
     font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
@@ -142,23 +142,37 @@
      @media screen and (min-width:1200px) {
                      padding-top: 32px;
                      padding-bottom: 32px;
+                    font-size: 14px;
                  }
 }
 
 
 .adress__mail { @media screen and (min-width: 768px)  {
-        padding-bottom: 10px;} }
+        margin-bottom: 10px;} }
 
 .adress__symbol {
-    width: 16px;
-        height: 12px;
+    
         margin-right: 10px;
         fill: currentColor;
     
-        &--size {
-            width: 10px;
-            height: 16px;
+        &--mail {
+            width: 14px;
+            height: 12px;
+            @media screen and (min-width:1200px) {
+                width: 16px;
+                    height: 12px;
+            }
         }
+
+         &--smartphone {
+             width: 10px;
+            height: 14px;
+            @media screen and (min-width:1200px) {
+                width: 10px;
+                    height: 16px;
+            }
+                     }
+
 }
 
 

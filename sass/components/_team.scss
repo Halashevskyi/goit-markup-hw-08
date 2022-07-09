@@ -1,7 +1,7 @@
 .team {
     padding-bottom: 60px;
     padding-top: 60px;
-    background-color: var(--primary-background-color);
+    background-color:var(--button-portfolio-bg) ;
     
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -118,7 +118,7 @@
     margin: 0;
 }
 
-.networks__list:not(:last-child) {
+.team-list:not(:last-child) {
     margin-right: 10px;
 }
 

@@ -214,7 +214,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -231,24 +231,39 @@ img {
 .adress__mail {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .adress__mail {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
 .adress__symbol {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
-.adress__symbol--size {
+.adress__symbol--mail {
+  width: 14px;
+  height: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .adress__symbol--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+.adress__symbol--smartphone {
   width: 10px;
-  height: 16px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .adress__symbol--smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .mobile-nav__logo {
@@ -698,7 +713,7 @@ img {
 .team {
   padding-bottom: 60px;
   padding-top: 60px;
-  background-color: var(--primary-background-color);
+  background-color: var(--button-portfolio-bg);
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -817,7 +832,7 @@ img {
   margin: 0;
 }
 
-.networks__list:not(:last-child) {
+.team-list:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1131,9 +1146,9 @@ img {
 }
 
 .online-form__input {
-  width: 358px;
   height: 50px;
-  padding: 15px 15px;
+  margin-bottom: 20px;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-style: Rregular;
@@ -1152,7 +1167,6 @@ img {
 @media screen and (min-width: 480px) {
   .online-form__input {
     width: 450px;
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1172,7 +1186,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 12px;
   text-align: center;
   letter-spacing: 0.06em;
   width: 200px;
@@ -1630,7 +1643,13 @@ img {
 }
 
 .portfolio-container {
-  padding: 20px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
   border: 1px solid #EEEEEE;
   border-top: none;
 }
